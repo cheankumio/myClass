@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<WMT_MS_Capabilities xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.1.1">
+	<Service>
+		<Name>WMS</Name>
+		<Title>Taiwan MAP Service</Title>
+		<Abstract>Can also generate PNG,JPG</Abstract>
+		<KeywordList>
+			<Keyword>WMS</Keyword>
+			<Keyword>maps.nlsc.gov.tw</Keyword>
+		</KeywordList>
+						<OnlineResource xlink:href="http://wms.nlsc.gov.tw/wms?VERSION=1.1.1" xlink:type="simple" />
+		<ContactInformation>
+			<ContactPersonPrimary>
+				<ContactPerson>NLSC</ContactPerson>
+				<ContactOrganization>maps.nlsc.gov.tw</ContactOrganization>
+			</ContactPersonPrimary>
+			<ContactPosition>PG</ContactPosition>
+			<ContactAddress>
+				<AddressType />
+				<Address />
+				<City>Taichung</City>
+				<StateOrProvince></StateOrProvince>
+				<PostCode></PostCode>
+				<Country>Taiwan</Country>
+			</ContactAddress>
+			<ContactVoiceTelephone>886-422522966</ContactVoiceTelephone>
+			<ContactFacsimileTelephone>886-422522966</ContactFacsimileTelephone>
+			<ContactElectronicMailAddress>mail.nlsc.gov.tw</ContactElectronicMailAddress>
+		</ContactInformation>
+		<Fees>NONE</Fees>
+		<AccessConstraints>NONE</AccessConstraints>
+	</Service>
+	<Capability>
+		<Request>
+			<GetCapabilities>
+				<Format>text/xml</Format>
+				<Format>application/vnd.ogc.wms_xml</Format>
+				<Format>application/vnd.ogc.wms_x-bxml</Format>
+				<Format>application/x-bxml; version="0.0.8"</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+						<OnlineResource xlink:href="http://wms.nlsc.gov.tw/wms?VERSION=1.1.1" xlink:type="simple" />
+						</Get>
+						<Post>
+						<OnlineResource xlink:href="http://wms.nlsc.gov.tw/wms?VERSION=1.1.1" xlink:type="simple" />
+						</Post>
+						</HTTP>
+				</DCPType>
+			</GetCapabilities>
+			<GetMap>
+				<Format>image/png</Format>
+				<Format>image/jpeg</Format>
+				<DCPType>
+					<HTTP>
+						<Get>
+						<OnlineResource xlink:href="http://wms.nlsc.gov.tw/wms?VERSION=1.1.1" xlink:type="simple" />
+						</Get>
+						<Post>
+						<OnlineResource xlink:href="http://wms.nlsc.gov.tw/wms?VERSION=1.1.1" xlink:type="simple" />
+						</Post>
+					</HTTP>
+				</DCPType>
+			</GetMap>
+		</Request>
+		<Exception>
+			<Format>text/xml</Format>
+			<Format>application/vnd.ogc.se_xml</Format>
+		</Exception>
+			<Layer>
+				<Title>maps.nlsc.gov.tw web map service</Title>
+				<Abstract>Can also generate PNG,JPG</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+			<KeywordList>
+				<Keyword>WMS</Keyword>
+				<Keyword>maps.nlsc.gov.tw</Keyword>
+			</KeywordList>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>B5000</Name>
+				<Title>1/5000基本地形圖</Title>
+				<Abstract>1/5000基本地形圖</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>CITY</Name>
+				<Title>縣市界</Title>
+				<Abstract>縣市界</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP16</Name>
+				<Title>臺灣通用電子地圖(不含等高線及門牌)</Title>
+				<Abstract>臺灣通用電子地圖(不含等高線及門牌)</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP2</Name>
+				<Title>臺灣通用電子地圖透明</Title>
+				<Abstract>臺灣通用電子地圖透明</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP5_OPENDATA</Name>
+				<Title>臺灣通用電子地圖(套疊等高線)opendata, 最大比例尺一萬八千分之一</Title>
+				<Abstract>臺灣通用電子地圖(套疊等高線)opendata, 最大比例尺一萬八千分之一</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP5</Name>
+				<Title>臺灣通用電子地圖(套疊等高線)</Title>
+				<Abstract>臺灣通用電子地圖(套疊等高線)</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP6_OPENDATA</Name>
+				<Title>臺灣通用電子地圖(不含等高線)opendata, 最大比例尺一萬八千分之一</Title>
+				<Abstract>臺灣通用電子地圖(不含等高線)opendata, 最大比例尺一萬八千分之一</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP6</Name>
+				<Title>臺灣通用電子地圖(不含等高線)</Title>
+				<Abstract>臺灣通用電子地圖(不含等高線)</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP7</Name>
+				<Title>taiwane-map(transparent)</Title>
+				<Abstract>taiwane-map(transparent)</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP8</Name>
+				<Title>taiwane-map(en)</Title>
+				<Abstract>taiwane-map(en)</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>EMAP</Name>
+				<Title>臺灣通用電子地圖</Title>
+				<Abstract>臺灣通用電子地圖</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>LANDSECT</Name>
+				<Title>段籍圖</Title>
+				<Abstract>段籍圖</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>LUIMAP</Name>
+				<Title>國土利用調查成果圖</Title>
+				<Abstract>國土利用調查成果圖</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>MB5000</Name>
+				<Title>1/5000圖幅框</Title>
+				<Abstract>1/5000圖幅框</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>PHOTO2015</Name>
+				<Title>正射影像圖104年更新區</Title>
+				<Abstract>正射影像圖104年更新區</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>PHOTO2</Name>
+				<Title>正射影像圖(通用)</Title>
+				<Abstract>正射影像圖(通用)</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>SCHOOL</Name>
+				<Title>各級學校範圍圖</Title>
+				<Abstract>各級學校範圍圖</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>TOWN</Name>
+				<Title>鄉鎮區界</Title>
+				<Abstract>鄉鎮區界</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+			<Layer cascaded="0" fixedHeight="0" fixedWidth="0" opaque="0" queryable="0">
+				<Name>Village</Name>
+				<Title>村里界</Title>
+				<Abstract>村里界</Abstract>
+				<SRS>EPSG:3857</SRS>
+				<SRS>EPSG:4326</SRS>
+				<LatLonBoundingBox maxx="125.0" maxy="27.0" minx="115.5" miny="19.5" />
+				<BoundingBox SRS="EPSG:3857" maxx="1.3914936349159202E7" maxy="3123471.7491045767" minx="1.2857401186623102E7" miny="2213892.182859725" />
+				<Style>
+				<Name>default</Name>
+				</Style>
+			</Layer>
+		</Layer>
+	</Capability>
+</WMT_MS_Capabilities>
